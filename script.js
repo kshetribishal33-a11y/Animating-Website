@@ -14,6 +14,12 @@ document.addEventListener("mousemove", function(dets){
     blur.style.top = dets.y-200+"px"
 })
 
+var h4All = document.querySelectorAll("#nav h4");
+h4All.forEach(function(elem){
+    console.log(elem);
+    
+})
+
 
 gsap.to("#nav", {
     backgroundColor :"#000",
@@ -43,4 +49,6 @@ gsap.to("#main",{
 
     }
 })
+
+
 
